@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코엑스 VISITOR</title>
+
+  <!-- Open Graph -->
+  <!-- http://ogp.me/ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="코엑스" />
+  <meta property="og:title" content="코엑스 클론코딩" />
+  <meta property="og:description" content="본 코엑스 사이트는 클론코딩으로 제작되었습니다." />
+  <meta property="og:image" content="https://www.coex.co.kr/wp-content/themes/coex-visitor/assets/images/logo/og_img.png" />
+  <meta property="og:url" content="https://www.coex.co.kr/" />
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="코엑스" />
+  <meta property="twitter:title" content="코엑스 클론코딩" />
+  <meta property="twitter:description" content="본 코엑스 사이트는 클론코딩으로 제작되었습니다." />
+  <meta property="twitter:image" content="https://www.coex.co.kr/wp-content/themes/coex-visitor/assets/images/logo/og_img.png" />
+  <meta property="twitter:url" content="https://www.coex.co.kr/" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple_touch_icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/android_chrome_192x192.png" />
+  <link rel="icon" type="image/png" sizes="256x256" href="./images/android_chrome_256x256.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_32x32.png" />
+  
+  <!-- CSS -->
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- Google Fonts : Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script ript src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+  <!-- JS -->
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="./" class="logo-img">coex</a>
+        </h1>
+
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">행사</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">가이드</a>
+              <ul>
+                <li><a href="javacript:void(0)">오시는 길</a></li>
+                <li><a href="javacript:void(0)">주차안내</a></li>
+                <li><a href="javacript:void(0)">편의시설</a></li>
+                <li><a href="javacript:void(0)">알림마당</a></li>
+                <li><a href="javacript:void(0)">문의하기</a></li>
+                <li><a href="javacript:void(0)">뉴스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">하이라이트</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Business</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="global-menu">
+          <div class="search">
+            <div class="search__btn">
+              <button type="button" class="btn-open" aria-label="검색창 열기 버튼">
+                <img src="./images/icon/ico_search.svg" alt="검색" />
+              </button>
+              <button type="button" class="btn-close" aria-label="검색창 닫기 버튼">
+                <img src="./images/icon/ico_search_close.svg" alt="닫기" />
+              </button>
+            </div>
+
+            <div class="search__bar">
+              <input type="search" />
+              <button type="button" class="search-submit"></button>
+            </div>
+
+            <div class="search__recommend">
+              <h4>추천검색어</h4>
+              <ul class="recommend-list">
+                <li><a href="javascript:void(0)">#코엑스 전시</a></li>
+                <li><a href="javascript:void(0)">#행사</a></li>
+                <li><a href="javascript:void(0)">#주차안내</a></li>
+                <li><a href="javascript:void(0)">#편의시설</a></li>
+                <li><a href="javascript:void(0)">#오시는 길</a></li>
+                <li><a href="javascript:void(0)">#컨퍼런스</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="lang-list">
+            <li class="is-active"><a href="javascript:void(0)">KOR</a></li>
+            <li><a href="javascript:void(0)">ENG</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- VISUAL -->
+    <section class="main-visual">
+      <div class="whatson inner">
+        <div class="whatson__img">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="./images/common_thumb1.jpg" alt="제 29회 서울리빙디자인페어" />
+                </a>
+                <a href="javascript:void(0)">
+                  <img src="./images/common_thumb2.jpg" alt="대한민국 대표 EV 산업 전시회" />
+                </a>
+                <a href="javascript:void(0)">
+                  <img src="./images/common_thumb3.jpg" alt="2024 INTER BATTERY" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="whatson__txt-title">
+          <div class="sub-title">What’s On</div>
+          <h2 class="title">제29회<br /> 서울리빙디자인페어</h2>
+          <h2 class="title">EV 트렌드 코리아 2024</h2>
+          <h2 class="title">인터배터리 2024</h2>
+        </div>  
+
+        <div class="whatson__txt-info">
+          <div class="info-date">2024.02.28-2024.03.03</div>
+          <div class="info-date">2024.03.06-2024.03.08</div>
+          <div class="info-date">2024.03.06-2024.03.08</div>
+          <div class="info-location">HALL A, B, C, D</div>
+          <div class="info-location">HALL A</div>
+          <div class="info-location">HALL A, B, C, D, The Platz, 컨퍼런스룸E</div>
+        </div>
+
+        <a href="javascript:void(0)" class="whatson__link" aria-label="서울리빙디자인페어 링크 버튼"></a>
+        <a href="javascript:void(0)" class="whatson__link" aria-label="EV트렌드 링크 버튼"></a>
+        <a href="javascript:void(0)" class="whatson__link" aria-label="인터배터리 링크 버튼"></a>
+      </div>
+      <div class="whatson-decorate">
+        <span class="txt">EXHIBITION</span>
+        <img class="img" src="./images/icon/ico_barcode.svg" alt="바코드" />
+      </div>
+    </section>
+
+    <!-- QUICK MENU -->
+    <section class="quick-menu inner">
+      <a href="javascript:void(0)" class="quick-menu__rental">
+        <span>전시장 및 회의실 임대 정보</span>
+        <h4>대관안내</h4>
+      </a>
+
+      <div class="quick-menu__guide">
+        <p class="guide-txt">
+          Navigating Your Visit:<br />
+          Tips and Resources
+        </p>
+        <ul class="guide-menu">
+          <li><span>주차 안내</span></li>
+          <li><span>주차 안내</span></li>
+          <li><span>주차 안내</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EVENT -->
+    <section class="event">
+      <div class="inner">
+        <div class="event__title">
+          <div class="title-box">
+            <h3 class="title">진행 중인 행사</h3>
+            <span class="num">8</span>
+          </div>
+
+          <a href="javascript:void(0)" class="event__more">View All Events</a>
+        </div>
+
+        <ul class="event__list">
+          <li>
+            <div class="list-label">Convention</div>
+            <h4 class="title">제 4회 아일랜드유학박람회</h4>
+            <div class="date">2024.02.24 - 2024.02.24</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">K-일러스트레이션페어 서울 2024</h4>
+            <div class="date">2024.02.22 - 2024.02.25</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">2024 서울국제스포츠레저산업전(SPOEX2024)</h4>
+            <div class="date">2024.02.22 - 2024.02.25</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">제29회 서울리빙디자인페어</h4>
+            <div class="date">2024.02.28 - 2024.03.03</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">2024 크래프트서울</h4>
+            <div class="date">2024.02.28 - 2024.03.03</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">인터배터리 2024</h4>
+            <div class="date">2024.03.06 - 2024.03.08</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">EV 트렌드 코리아 2024</h4>
+            <div class="date">2024.03.06 - 2024.03.08</div>
+          </li>
+          <li>
+            <div class="list-label">Exhibition</div>
+            <h4 class="title">제39회 국제 의료기기 및 병원설비 전시회</h4>
+            <div class="date">2024.03.14 - 2024.03.17</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TICKET -->
+    <section class="ticket">
+      <div class="inner">
+        <div class="title-box">
+          <h3 class="title">티켓 오픈</h3>
+          <span class="num">5</span>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ticket__img">
+                <img src="./images/common_thumb3.jpg" alt="인터배터리 2024">
+              </div>
+              <div class="ticket__content">
+                <h4>인터배터리 2024</h4>
+                <ul class="ticket__detail-list">
+                  <li>
+                    <h5>행사 개최</h5>
+                    <p>D-14</p>
+                  </li>
+                  <li>
+                    <h5>전시 일정</h5>
+                    <p>2024.03.06 - 2024.03.08</p>
+                  </li>
+                  <li>
+                    <h5>장소</h5>
+                    <p>HALL A, B, C, D, The Platz, 컨퍼런스룸E</p>
+                  </li>
+                </ul>
+
+                <ul class="ticket__link">
+                  <li><a href="javascript:void(0)">홈페이지</a></li>
+                  <li><a href="javascript:void(0)">예약하기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news inner">
+      <div class="title-box">
+        <h3 class="title">코엑스 소식</h3>
+        <a href="https://www.coex.co.kr/guide/notification/coex-notice/" class="news__link">More</a>
+      </div>
+
+      <div class="news__content">
+        <ul class="news__menu">
+          <li><a href="javascript:void(0)">공지사항</a></li>
+          <li><a href="javascript:void(0)">입찰정보</a></li>
+          <li><a href="https://www.coex.co.kr/guide/news/">뉴스</a></li>
+        </ul>
+
+        <ul class="news__list list-notice">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">16</div>
+                <div>2023.10</div>
+              </div>
+              <div class="list-title">[채용공고]2024년도 코엑스 신입 및 경력사원 채용</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">04</div>
+                <div>2023.10</div>
+              </div>
+              <div class="list-title">2024년도 코엑스 전시장 서비스협력업체 등록 공고</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">09</div>
+                <div>2023.08</div>
+              </div>
+              <div class="list-title">Coex Jamboree Lounge(코엑스 잼버리 문화체험 프로그램 및 라운지 운영)</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">08</div>
+                <div>2023.05</div>
+              </div>
+              <div class="list-title">코엑스 전시장 현장관리 담당자 (홀매니저) 채용 공고</div>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="news__list list-bidding">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">20</div>
+                <div>2024.02</div>
+              </div>
+              <div class="list-title">무역센터 아셈타워 메일센터 운영 용역</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">15</div>
+                <div>2024.02</div>
+              </div>
+              <div class="list-title">2024년 무역센터 공조기용 인버터 교체공사</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">15</div>
+                <div>2024.02</div>
+              </div>
+              <div class="list-title">무역센터 아셈타워 스프링클러배관 교체 추가공사(6차)</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="list-date">
+                <div class="day">15</div>
+                <div>2024.02</div>
+              </div>
+              <div class="list-title">2024년 무역센터 공조기필터 구매</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section class="media">
+      <div class="inner">
+        <div class="media__txt">
+          <div class="title-box">
+            <h3 class="title fc--white">Media Wall</h3>
+          </div>
+          
+          <ul class="media__sns">
+            <li><a href="javascript:void(0)">instargram</a></li>
+            <li><a href="javascript:void(0)">Youtube</a></li>
+            <li><a href="javascript:void(0)">facebook</a></li>
+            <li><a href="javascript:void(0)">naver blog</a></li>
+            <li><a href="javascript:void(0)">twitter</a></li>
+          </ul>
+
+          <p>To Create The Best<br />Event Service</p>
+        </div>
+
+        <div class="media__img">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./images/media_wall_thumb1.jpg" alt="3월 전시 뭐 볼까?">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./images/media_wall_thumb2.jpg" alt="입장권 BIG 이벤트">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./images/media_wall_thumb3.jpg" alt="헤일로 시즌2">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./images/media_wall_thumb4.jpg" alt="각양각색 예술의 향연 월드아트엑스포">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./images/media_wall_thumb5.jpg" alt="국내 최대 조각 전시!">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__inner">
+        <div class="footer__address">
+          <div class="logo logo--pink" aria-label="코엑스 로고"></div>
+          <address>서울특별시 강남구 영동대로 513<br />(삼성동, 코엑스) 06164</address>
+          <div>대표번호 02-6000-0114</div>
+        </div>
+        <div class="footer__nav">
+          <ul class="nav-menu">
+            <li><a href="javascript:void(0)">행사일정</a></li>
+            <li><a href="javascript:void(0)">오시는 길</a></li>
+            <li><a href="javascript:void(0)">주차안내</a></li>
+            <li><a href="javascript:void(0)">편의시설</a></li>
+          </ul>
+        </div>
+        <div class="footer__link">
+          <ul>
+            <li><a href="javascript:void(0)">Coex 소개</a></li>
+            <li><a href="javascript:void(0)">Cyber Coex</a></li>
+            <li><a href="javascript:void(0)">Coex 소개</a></li>
+            <li><a href="javascript:void(0)">Coex MICE Cluster</a></li>
+          </ul>
+
+          <ul class="link-sns">
+            <li class="instargram"><a href="javascript:void(0)" aria-label="인스타그램 링크"></a></li>
+            <li class="youtube"><a href="javascript:void(0)" aria-label="유투브 링크"></a></li>
+            <li class="facebook"><a href="javascript:void(0)" aria-label="페이스북 링크"></a></li>
+            <li class="twitter"><a href="javascript:void(0)" aria-label="트위터 링크"></a></li>
+            <li class="naver-blog"><a href="javascript:void(0)" aria-label="네이버블로그 링크"></a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <ul>
+            <li><a href="javascript:void(0)">안전경영</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+            <li><a href="javascript:void(0)">무역센터 신문고</a></li>
+            <li><a href="javascript:void(0)">사이트맵</a></li>
+          </ul>
+          <div class="footer__familysite">
+            <div class="family-btn">Family Site</div>
+            <ul class="family-list">
+              <li><a href="javascript:void(0)">창원컨벤션센터</a></li>
+              <li><a href="javascript:void(0)">CoexMall</a></li>
+              <li><a href="javascript:void(0)">KITA</a></li>
+              <li><a href="javascript:void(0)">WTC Seoul</a></li>
+              <li><a href="javascript:void(0)">KTNET</a></li>
+              <li><a href="javascript:void(0)">CALT</a></li>
+              <li><a href="javascript:void(0)">CAAM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy;COPYRIGHT<span class="this-year"></span> Coex. All Rights Reserved</p>
+    </footer>
+
+    <!-- TOP BUTTON -->
+    <div id="to-top">
+      <span class="top-btn"></span>
+    </div>
+  </div>
+</body>
+</html>
