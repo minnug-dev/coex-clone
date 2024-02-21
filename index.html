@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>코엑스 VISITOR</title>
+  <title>코엑스</title>
 
   <!-- Open Graph -->
   <!-- http://ogp.me/ -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="코엑스" />
+  <meta property="og:site_name" content="코엑스 클론코딩" />
   <meta property="og:title" content="코엑스 클론코딩" />
   <meta property="og:description" content="본 코엑스 사이트는 클론코딩으로 제작되었습니다." />
   <meta property="og:image" content="https://www.coex.co.kr/wp-content/themes/coex-visitor/assets/images/logo/og_img.png" />
@@ -16,7 +16,7 @@
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary" />
-  <meta property="twitter:title" content="코엑스" />
+  <meta property="twitter:title" content="코엑스 클론코딩" />
   <meta property="twitter:title" content="코엑스 클론코딩" />
   <meta property="twitter:description" content="본 코엑스 사이트는 클론코딩으로 제작되었습니다." />
   <meta property="twitter:image" content="https://www.coex.co.kr/wp-content/themes/coex-visitor/assets/images/logo/og_img.png" />
@@ -40,6 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/main.css" />
 
   <!-- Swiper -->
@@ -52,39 +53,59 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header class="header">
       <div class="inner">
         <h1 class="logo">
-          <a href="./" class="logo-img">coex</a>
+          <a href="./" class="logo-img">
+            <img src="./images/logo_coex.svg" alt="coex">
+          </a>
         </h1>
 
-        <nav class="gnb">
-          <ul>
-            <li>
-              <a href="javascript:void(0)">행사</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">가이드</a>
-              <ul>
-                <li><a href="javacript:void(0)">오시는 길</a></li>
-                <li><a href="javacript:void(0)">주차안내</a></li>
-                <li><a href="javacript:void(0)">편의시설</a></li>
-                <li><a href="javacript:void(0)">알림마당</a></li>
-                <li><a href="javacript:void(0)">문의하기</a></li>
-                <li><a href="javacript:void(0)">뉴스</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:void(0)">하이라이트</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Business</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="gnb">
+          <li class="gnb__item">
+            <a href="javascript:void(0)">행사</a>
+          </li>
+          <li class="gnb__item item-guide">
+            <a href="javascript:void(0)">가이드</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="javacript:void(0)">오시는 길</a></li>
+              <li class="menu-item"><a href="javacript:void(0)">주차안내</a></li>
+              <li class="menu-item"><a href="javacript:void(0)">알림마당</a></li>
+              <li class="menu-item"><a href="javacript:void(0)">편의시설</a></li>
+              <li class="menu-item"><a href="javacript:void(0)">문의하기</a></li>
+              <li class="menu-item"><a href="javacript:void(0)">뉴스</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item">
+            <a href="javascript:void(0)">하이라이트</a>
+          </li>
+          <li class="gnb__item item-business">
+            <a href="javascript:void(0)"><span class="main-color">Business</span></a>
+          </li>
+        </ul>
 
-        <div class="global-menu">
           <div class="search">
+            <div class="search__open">
+              <div class="search__bar">
+                <div class="input-wrap">
+                  <input type="search" class="input-search" />
+                  <button type="submit" class="search-submit"></button>
+                </div>
+              </div>
+
+              <div class="search__recommend">
+                <h4>추천검색어</h4>
+                <ul class="recommend-list">
+                  <li><a href="javascript:void(0)">#코엑스 전시</a></li>
+                  <li><a href="javascript:void(0)">#행사</a></li>
+                  <li><a href="javascript:void(0)">#주차안내</a></li>
+                  <li><a href="javascript:void(0)">#편의시설</a></li>
+                  <li><a href="javascript:void(0)">#오시는 길</a></li>
+                  <li><a href="javascript:void(0)">#컨퍼런스</a></li>
+                </ul>
+              </div>
+            </div>
+
             <div class="search__btn">
               <button type="button" class="btn-open" aria-label="검색창 열기 버튼">
                 <img src="./images/icon/ico_search.svg" alt="검색" />
@@ -93,30 +114,12 @@
                 <img src="./images/icon/ico_search_close.svg" alt="닫기" />
               </button>
             </div>
-
-            <div class="search__bar">
-              <input type="search" />
-              <button type="button" class="search-submit"></button>
-            </div>
-
-            <div class="search__recommend">
-              <h4>추천검색어</h4>
-              <ul class="recommend-list">
-                <li><a href="javascript:void(0)">#코엑스 전시</a></li>
-                <li><a href="javascript:void(0)">#행사</a></li>
-                <li><a href="javascript:void(0)">#주차안내</a></li>
-                <li><a href="javascript:void(0)">#편의시설</a></li>
-                <li><a href="javascript:void(0)">#오시는 길</a></li>
-                <li><a href="javascript:void(0)">#컨퍼런스</a></li>
-              </ul>
-            </div>
           </div>
 
           <ul class="lang-list">
             <li class="is-active"><a href="javascript:void(0)">KOR</a></li>
             <li><a href="javascript:void(0)">ENG</a></li>
           </ul>
-        </div>
       </div>
     </header>
 
@@ -194,8 +197,10 @@
       <div class="inner">
         <div class="event__title">
           <div class="title-box">
-            <h3 class="title">진행 중인 행사</h3>
-            <span class="num">8</span>
+            <h3 class="title">
+              <span class="txt">진행 중인 행사</span>
+              <span class="num">8</span>
+            </h3>
           </div>
 
           <a href="javascript:void(0)" class="event__more">View All Events</a>
@@ -250,8 +255,12 @@
     <section class="ticket">
       <div class="inner">
         <div class="title-box">
-          <h3 class="title">티켓 오픈</h3>
-          <span class="num">5</span>
+          <div class="title-box">
+            <h3 class="title">
+              <span class="txt">티켓 오픈</span>
+              <span class="num">5</span>
+            </h3>
+          </div>
         </div>
 
         <div class="swiper">
@@ -439,7 +448,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
       <div class="footer__inner">
         <div class="footer__address">
           <div class="logo logo--pink" aria-label="코엑스 로고"></div>
