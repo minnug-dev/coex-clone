@@ -63,7 +63,7 @@ a {
 }
 
 .title-box .title .txt {
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 700;
 }
 
@@ -73,6 +73,19 @@ a {
   top: 0;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.title-box .title.txt-white {
+  color: #fff;
+}
+
+.txt-ellipsis {
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* HEADER */

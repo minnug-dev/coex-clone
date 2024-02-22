@@ -7,3 +7,18 @@ const swiperWhatson= new Swiper('.whatson__img .swiper', {
     clickable: true 
   },
 });
+
+const swiperTicket= new Swiper('.ticket .swiper', {
+  spaceBetween: 74, 
+  loop: true,
+  slidesPerView: 2, 
+  centeredSlides: true,
+  pagination: {
+    el: '.ticket .swiper-pagination', 
+    clickable: true 
+  },
+  navigation: {
+    prevEl: '.ticket .swiper-button-prev',
+    nextEl: '.ticket .swiper-button-next'
+  }
+});
