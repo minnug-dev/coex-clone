@@ -105,3 +105,129 @@
   background: url("../images/icon/ico_barcode.svg") no-repeat center;
   background-size: contain;
 }
+
+/* QUICK MENU */
+.quick-menu {
+  display: flex;
+  margin-bottom: 155px;
+}
+
+.quick-sub-title,
+.quick-menu__guide .quick-title {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.quick-title,
+.quick-menu__guide .quick-sub-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.quick-menu__rental {
+  position: relative;
+  width: 25%;
+  padding: 35px 38px;
+  color: #fff;
+  background-color: #000;
+}
+
+.quick-menu__rental::before {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  right: 38px;
+  width: 103px;
+  height: 81px;
+  background: url("../images/icon/ico_map.png") no-repeat center;
+  background-size: contain;
+}
+
+.quick-menu__guide {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  padding: 35px 38px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+.guide-title-wrap {
+  width: 35%;
+}
+
+.guide-menu {
+  width: 65%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  column-gap: 28px;
+}
+
+.guide-menu .menu-item {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.guide-menu .menu-item a {
+  padding: 60px 0 5px;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.guide-menu .menu-item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 63px;
+  height: 75px;
+  background: url("../images/icon/ico_guide1.svg") no-repeat left bottom;
+  background-size: contain;
+}
+
+.guide-menu .menu-item:nth-child(2) a::before {
+  width: 58px;
+  height: 80px;
+  background-image: url("../images/icon/ico_guide2.svg");
+}
+
+.guide-menu .menu-item:nth-child(3) a::before {
+  width: 82px;
+  height: 77px;
+  background-image: url("../images/icon/ico_guide3.svg");
+}
+
+.guide-menu .menu-item .item-txt {
+  position: relative;
+  transition: padding .3s;
+}
+
+.guide-menu .menu-item .item-txt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 4px;
+  height: 9px;
+  background: url("../images/icon/ico_text_arrow.svg") no-repeat center;
+  background-size: contain;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.guide-menu .menu-item a:hover .item-txt {
+  padding-right: 10px;
+}
+
+.guide-menu .menu-item a:hover .item-txt::after {
+  opacity: 1;
+  visibility: visible;
+}
