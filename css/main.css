@@ -1,0 +1,107 @@
+/* WHATS ON */
+.whatson {
+  position: relative;
+}
+
+.whatson .inner {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 77px;
+}
+
+.whatson .sub-title {
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.whatson__txt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+  flex-basis: 0;
+}
+
+.whatson__txt-title .title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.whatson__txt-info .info-date {
+  margin-bottom: 2px;
+}
+
+.whatson__txt-info .info-date,
+.whatson__txt-info .info-location {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', 'Pretendard', Helvetica, "Apple SD Gothic Neo", Dotum, 돋움, sans-serif;
+}
+
+.whatson__link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 240px;
+  height: 242px;
+  background: url("../images/icon/ico_whatson_arrow.svg") no-repeat center;
+  background-size: contain;
+}
+
+.whatson__img {
+  position: relative;
+  flex-basis: 0;
+}
+
+.whatson__img .swiper {
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+}
+
+.whatson__img .swiper-pagination.swiper-pagination-bullets {
+  bottom: -30px;
+}
+
+.whatson__img .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #e8e8e8;
+  opacity: 1;
+}
+
+.whatson__img .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.whatson__decorate-txt {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  line-height: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.whatson__decorate-img {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  z-index: 1;
+  overflow: hidden;
+  width: 52px;
+  height: 186px;
+  background: url("../images/icon/ico_barcode.svg") no-repeat center;
+  background-size: contain;
+}
