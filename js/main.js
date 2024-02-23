@@ -22,3 +22,7 @@ const swiperTicket= new Swiper('.ticket .swiper', {
     nextEl: '.ticket .swiper-button-next'
   }
 });
+
+// Footer - 현재 년도 정보 반영
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
