@@ -60,11 +60,9 @@ a {
   position: relative;
   display: inline-block;
   padding-right: 36px;
-}
-
-.title-box .title .txt {
   font-size: 44px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .title-box .num {
@@ -72,7 +70,7 @@ a {
   right: 0;
   top: 0;
   font-size: 26px;
-  line-height: 1.2;
+  font-weight: 400;
 }
 
 .title-box .title.txt-white {
@@ -254,8 +252,6 @@ a {
   transform: translateY(-50%);
   width: 25px;
 }
-
-.search .search__btn .btn-open {}
 
 .search .search__btn .btn-close {
   display: none;
