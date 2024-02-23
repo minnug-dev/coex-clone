@@ -11,7 +11,7 @@ const swiperWhatson= new Swiper('.whatson__img .swiper', {
 const swiperTicket= new Swiper('.ticket .swiper', {
   spaceBetween: 74, 
   loop: true,
-  slidesPerView: 2, 
+  slidesPerView: 1.7, 
   centeredSlides: true,
   pagination: {
     el: '.ticket .swiper-pagination', 

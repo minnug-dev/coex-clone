@@ -465,7 +465,6 @@
 .ticket__content-list .list-item {
   flex-grow: 1;
   flex-basis: 0;
-  column-gap: 20px;
 }
 
 .ticket__content-list .list-item h5 {
@@ -476,7 +475,6 @@
 }
 
 .ticket__content-list .list-item p {
-  max-width: 90%;
   font-size: 16px;
   font-weight: 500;
 }
@@ -484,6 +482,10 @@
 .ticket__content-list .list-item.item-Dday p {
   font-size: 33px;
   font-weight: 600;
+}
+
+.ticket__content-list .list-item:nth-child(2) p {
+  max-width: 90%;
 }
 
 .ticket__link {
@@ -552,7 +554,7 @@
 .ticket-swiper .swiper-button-wrap {
   position: absolute;
   top: 20px;
-  right: 400px;
+  right: 315px;
 }
 
 .ticket-swiper .swiper-button-prev,
