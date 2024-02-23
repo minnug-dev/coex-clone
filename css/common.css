@@ -645,6 +645,7 @@ a {
 
 /* TOP BUTTON */
 .top-btn {
+  display: none;
   position: fixed;
   right: 30px;
   bottom: 20px;
