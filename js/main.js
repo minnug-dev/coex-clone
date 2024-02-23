@@ -22,3 +22,15 @@ const swiperTicket= new Swiper('.ticket .swiper', {
     nextEl: '.ticket .swiper-button-next'
   }
 });
+
+// ScrollMagic
+const spyEls = document.querySelectorAll('.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, 
+      triggerHook: .8,  
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});
