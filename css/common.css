@@ -116,7 +116,7 @@ a {
   transform: translateY(-50%);
 }
 
-.header .logo a {
+.header .logo>a {
   display: block;
   width: 85px;
 }
@@ -260,12 +260,12 @@ a {
 }
 
 .search .search__open {
+  display: none;
   position: absolute;
   top: 50%;
   right: 100px;
   max-width: 340px;
   margin-top: -18px;
-  display: none;
 }
 
 .search .search__bar {
@@ -341,7 +341,7 @@ a {
   display: flex;
 }
 
-.lang-list a {
+.lang-list li>a {
   font-size: 15px;
   font-weight: 600;
 }
@@ -378,25 +378,30 @@ a {
   position: relative;
   flex: 1;
   flex-basis: 0;
+  min-height: 342px;
   padding: 23px 17px 23px 17px;
+  box-sizing: border-box;
   border-right: 1px solid #000;
 }
 
 .footer .inner>div::before,
 .footer .inner>div::after,
-.footer__nav .menu-item:before,
-.footer__nav .menu-item:after {
+.footer__nav .nav-menu>li:before,
+.footer__nav .nav-menu>li:after {
   content: "";
   position: absolute;
-  top: 0;
   left: 9px;
   right: 9px;
   border-top: 1px solid #000;
 }
 
+.footer .inner>div::before,
+.footer__nav .nav-menu>li:before {
+  top: 0;
+}
+
 .footer .inner>div::after,
-.footer__nav .menu-item:after {
-  top: auto;
+.footer__nav .nav-menu>li:after {
   bottom: 0;
 }
 
@@ -415,8 +420,8 @@ a {
 }
 
 .footer__address .logo {
-  width: 105px;
-  height: 37px;
+  width: 109px;
+  height: 39px;
   margin-bottom: 26px;
   background: url("../images/logo_footer.svg") no-repeat center;
   background-size: contain;
@@ -450,34 +455,33 @@ a {
   height: 100%;
 }
 
-.footer__nav .menu-item {
+.footer__nav .nav-menu>li {
   position: relative;
   width: calc(50% - 2px);
-  padding-bottom: 40%;
   border-left: 1px solid;
 }
 
-.footer__nav .menu-item:nth-child(n + 3)::before {
+.footer__nav .nav-menu>li:nth-child(n + 3)::before {
   border-top: none;
 }
 
-.footer__nav .menu-item:nth-child(2n - 1) {
+.footer__nav .nav-menu>li:nth-child(2n - 1) {
   border-left: none;
 }
 
-.footer__nav .menu-item a {
-  display: block;
+.footer__nav .nav-menu>li>a {
+  display: inline-block;
   width: 100%;
   height: 100%;
   font-size: 19px;
 }
 
-.footer__nav .menu-item .txt {
+.footer__nav .nav-menu>li .txt {
   display: inline-block;
   transform: translate(17px, 19px);
 }
 
-.footer__nav .menu-item:hover .txt {
+.footer__nav .nav-menu>li:hover .txt {
   text-decoration: underline;
 }
 
@@ -491,11 +495,11 @@ a {
   margin-bottom: 10px;
 }
 
-.footer__link .link-coex a {
-  display: block;
+.footer__link .link-coex>li>a {
+  display: inline-block;
 }
 
-.footer__link .link-coex>li:hover a {
+.footer__link .link-coex>li>a:hover {
   text-decoration: underline;
 }
 
@@ -511,14 +515,14 @@ a {
   border-radius: 50px;
 }
 
-.footer__link .link-sns>li a {
+.footer__link .link-sns>li>a {
   position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 
-.footer__link .link-sns>li a::before {
+.footer__link .link-sns>li>a::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -528,31 +532,31 @@ a {
   background-size: contain;
 }
 
-.footer__link .link-sns>li.instargram a::before {
+.footer__link .link-sns>li.instargram>a::before {
   width: 16px;
   height: 16px;
   background-image: url("../images/icon/ico_instargram.svg");
 }
 
-.footer__link .link-sns>li.youtube a::before {
+.footer__link .link-sns>li.youtube>a::before {
   width: 19px;
   height: 14px;
   background-image: url("../images/icon/ico_youtube.svg");
 }
 
-.footer__link .link-sns>li.facebook a::before {
-  width: 8px;
-  height: 16px;
+.footer__link .link-sns>li.facebook>a::before {
+  width: 9px;
+  height: 17px;
   background-image: url("../images/icon/ico_facebook.svg");
 }
 
-.footer__link .link-sns>li.twitter a::before {
+.footer__link .link-sns>li.twitter>a::before {
   width: 17px;
   height: 16px;
   background-image: url("../images/icon/ico_twitter.svg");
 }
 
-.footer__link .link-sns>li.naver-blog a::before {
+.footer__link .link-sns>li.naver-blog>a::before {
   width: 22px;
   height: 18px;
   background-image: url("../images/icon/ico_blog.svg");
@@ -573,11 +577,11 @@ a {
   margin-bottom: 10px;
 }
 
-.footer__menu .menu-info>li a {
+.footer__menu .menu-info>li>a {
   display: inline-block;
 }
 
-.footer__menu .menu-info>li:hover a {
+.footer__menu .menu-info>li:hover>a {
   text-decoration: underline;
 }
 
@@ -623,13 +627,13 @@ a {
   background-color: #f7f7f7;
 }
 
-.footer__familysite .family-list>li a {
+.footer__familysite .family-list>li>a {
   display: inline-block;
   padding: 10px 17px;
   font-size: 14px;
 }
 
-.footer__familysite .family-list>li:hover a {
+.footer__familysite .family-list>li:hover>a {
   text-decoration: underline;
 }
 
