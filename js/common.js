@@ -1,22 +1,67 @@
-const toTopEl = document.querySelector('.top-btn');
+const toTopBtn = document.querySelector('.top-btn');
+const searchOpenBtn = document.querySelector('.search .btn-open');
+const searchCloseBtn = document.querySelector('.search .btn-close');
+const searchBox = document.querySelector('.search__open');
+const familyOpenBtn = document.querySelector('.family-btn');
+const familyMenu = document.querySelector('.family-list');
 
-// 버튼 클릭 시 최상단으로 이동
-toTopEl.addEventListener('click', function(){
+// Header - 검색 버튼 열기 함수
+function openSearch() {
+  searchBox.classList.add('is-open');
+  gsap.to(searchBox, .3, {
+    opacity: 1,
+    display: 'block'
+  });
+  gsap.to(searchCloseBtn, .3, {
+    scale: 1,
+    display: 'block'
+  });
+  gsap.to(searchOpenBtn, .3, {
+    scale: 0,
+    display: 'none'
+  });
+}
+// Header - 검색 버튼 닫기 함수
+function closeSearch() {
+  gsap.to(searchBox, .3, {
+    opacity: 0,
+    display: 'none'
+  });
+  searchBox.classList.remove('is-open');
+  gsap.to(searchCloseBtn, .3, {
+    scale: 0,
+    display: 'none'
+  });
+  gsap.to(searchOpenBtn, .3, {
+    scale: 1,
+    display: 'block'
+  });
+}
+
+// Header - 검색 버튼 열기/닫기 호출
+searchOpenBtn.addEventListener('click', openSearch);
+searchCloseBtn.addEventListener('click', closeSearch);
+
+// Footer - 패밀리 사이트 열고 닫기
+familyOpenBtn.addEventListener('click', function(){
+  familyMenu.classList.toggle('is-open');
+  this.classList.toggle('is-active');
+});
+
+// Footer - 버튼 클릭 시 최상단으로 이동
+toTopBtn.addEventListener('click', function(){
   gsap.to(window, .5, {
     scrollTo: 0
   });
-})
-
+});
 window.addEventListener('scroll', _.throttle(function() {
   if (window.scrollY > 700) {
-    // 최상단 이동 버튼 보이기
-    gsap.to(toTopEl, .3, {
+    gsap.to(toTopBtn, .3, {
       opacity: 1,
       display: 'block'
     });
   }  else {
-    // 최상단 이동 버튼 숨기기
-    gsap.to(toTopEl, .3, {
+    gsap.to(toTopBtn, .3, {
       opacity: 0,
       display: 'none'
     });
