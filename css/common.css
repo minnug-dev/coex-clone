@@ -5,6 +5,7 @@
 }
 
 body {
+  min-width: 1530px;
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -95,12 +96,13 @@ a {
 
 .header {
   position: fixed;
-  top: 0;
+  top: -58px;
   left: 0;
   right: 0;
   color: #fff;
   background-color: #000;
-  z-index: 15;
+  z-index: 20;
+  transition: top .3s;
 }
 
 .header .inner {
@@ -119,6 +121,10 @@ a {
 .header .logo>a {
   display: block;
   width: 85px;
+}
+
+.header.fixed {
+  top: 0;
 }
 
 /* HEADER - GNB */

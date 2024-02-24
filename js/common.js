@@ -4,6 +4,7 @@ const searchCloseBtn = document.querySelector('.search .btn-close');
 const searchBox = document.querySelector('.search__open');
 const familyOpenBtn = document.querySelector('.family-btn');
 const familyMenu = document.querySelector('.family-list');
+const headerEl = document.querySelector('.header');
 
 // HEADER - 검색 버튼 열기 함수
 function openSearch() {
@@ -37,6 +38,20 @@ function closeSearch() {
     display: 'block'
   });
 }
+
+// HEADER - 위/아래 스크롤 시 show/hide
+let lastScroll = document.documentElement.scrollTop;
+window.addEventListener('scroll', function(){
+  let scrollTop = document.documentElement.scrollTop;
+  if(scrollTop > lastScroll) {
+    // down
+    headerEl.classList.remove('fixed');
+  } else {
+    // up
+    headerEl.classList.add('fixed');
+  }
+  lastScroll = scrollTop
+})
 
 // HEADER - 검색 버튼 열기/닫기 호출
 searchOpenBtn.addEventListener('click', openSearch);
