@@ -5,7 +5,7 @@ const searchBox = document.querySelector('.search__open');
 const familyOpenBtn = document.querySelector('.family-btn');
 const familyMenu = document.querySelector('.family-list');
 
-// Header - 검색 버튼 열기 함수
+// HEADER - 검색 버튼 열기 함수
 function openSearch() {
   searchBox.classList.add('is-open');
   gsap.to(searchBox, .3, {
@@ -21,7 +21,7 @@ function openSearch() {
     display: 'none'
   });
 }
-// Header - 검색 버튼 닫기 함수
+// HEADER - 검색 버튼 닫기 함수
 function closeSearch() {
   gsap.to(searchBox, .3, {
     opacity: 0,
@@ -38,17 +38,17 @@ function closeSearch() {
   });
 }
 
-// Header - 검색 버튼 열기/닫기 호출
+// HEADER - 검색 버튼 열기/닫기 호출
 searchOpenBtn.addEventListener('click', openSearch);
 searchCloseBtn.addEventListener('click', closeSearch);
 
-// Footer - 패밀리 사이트 열고 닫기
+// FOOTER - 패밀리 사이트 열고 닫기
 familyOpenBtn.addEventListener('click', function(){
   familyMenu.classList.toggle('is-open');
   this.classList.toggle('is-active');
 });
 
-// Footer - 버튼 클릭 시 최상단으로 이동
+// FOOTER - 버튼 클릭 시 최상단으로 이동
 toTopBtn.addEventListener('click', function(){
   gsap.to(window, .5, {
     scrollTo: 0
@@ -68,6 +68,6 @@ window.addEventListener('scroll', _.throttle(function() {
   }
 }, 300));
 
-// Footer - 현재 년도 정보 반영
+// FOOTER - 현재 년도 정보 반영
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
