@@ -1,28 +1,80 @@
-/* COMMON - ANIMAION */
-
-.animation {
+/* SCROLL MOVE */
+.scroll-move {
   opacity: 0;
   transition: .6s;
 }
-.animation.to-up {
+
+.scroll-move.to-up {
   transform: translateY(100%);
 }
-.show .animation {
+
+.show .scroll-move {
   opacity: 1;
   transform: translateY(0);
 }
-.show .animation.delay-0 {
+
+.show .scroll-move.delay-0 {
   transition-delay: 0s;
 }
-.show .animation.delay-1 {
+
+.show .scroll-move.delay-1 {
   transition-delay: .1s;
 }
-.show .animation.delay-2 {
+
+.show .scroll-move.delay-2 {
   transition-delay: .2s;
 }
-.show .animation.delay-3 {
+
+.show .scroll-move.delay-3 {
   transition-delay: .3s;
 }
-.show .animation.delay-4 {
+
+.show .scroll-move.delay-4 {
   transition-delay: .4s;
+}
+
+/* CURSOR */
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-hover {
+  z-index: 20;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 transparent, 0 0 12.5rem transparent;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: width .2s, height .2s;
+}
+
+.cursor-view {
+  z-index: 20;
+  width: 110px;
+  height: 110px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: var(--font-poppins);
+  background-color: #000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: inherit;
+  transition: width .2s, height .2s;
+}
+
+.cursor-view::before {
+  content: "View";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
