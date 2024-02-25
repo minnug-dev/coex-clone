@@ -191,8 +191,7 @@ a {
   width: 13px;
   height: 13px;
   margin-top: -1px;
-  background: url("../images/icon/ico_head_blank_w.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_head_blank_w.svg") no-repeat center / contain;
 }
 
 .gnb .gnb__item.item-business:hover .main-color {
@@ -261,7 +260,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   width: 25px;
-  height: 100%;
+  height: 24px;
 }
 
 .search .search__btn .btn-close {
@@ -297,8 +296,7 @@ a {
   width: 15px;
   height: 100%;
   transform: translateY(-50%);
-  background: url("../images/icon/ico_search.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_search.svg") no-repeat center / contain;
 }
 
 .search .search__bar .input-wrap input {
@@ -317,8 +315,7 @@ a {
   transform: translateY(-50%);
   width: 28px;
   height: 25px;
-  background: #000 url("../images/icon/ico_search_arrow.svg") no-repeat center;
-  background-size: 15px 11px;
+  background: #000 url("../images/icon/ico_search_arrow.svg") no-repeat center / 15px 11px;
   border-radius: 5px;
 }
 
@@ -385,7 +382,7 @@ a {
 
 .footer .inner>div {
   position: relative;
-  flex: 1;
+  flex-grow: 1;
   flex-basis: 0;
   min-height: 342px;
   padding: 23px 17px 23px 17px;
@@ -432,8 +429,7 @@ a {
   width: 109px;
   height: 39px;
   margin-bottom: 26px;
-  background: url("../images/logo_footer.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/logo_footer.svg") no-repeat center / contain;
 }
 
 .footer__address .address-call {
@@ -616,8 +612,7 @@ a {
   transform: translateY(-50%);
   width: 13px;
   height: 7px;
-  background: url("../images/icon/ico_family_arrow.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_family_arrow.svg") no-repeat center / contain;
 }
 
 .footer__familysite .family-btn.is-active::after {
@@ -666,6 +661,5 @@ a {
   width: 39px;
   height: 39px;
   border: 2px solid #000;
-  background: #fff url("../images/icon/ico_scroll_top.svg") no-repeat center;
-  background-size: 14px 15px;
+  background: #fff url("../images/icon/ico_scroll_top.svg") no-repeat center / 14px 15px;
 }

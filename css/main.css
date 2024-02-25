@@ -43,6 +43,10 @@
   transform: scaleY(1);
 }
 
+.whatson__txt-info .info-date {
+  margin-bottom: 2px;
+}
+
 .whatson__txt-info .info-date,
 .whatson__txt-info .info-location {
   font-size: 24px;
@@ -56,16 +60,15 @@
 
 .whatson__link {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 40px;
+  bottom: 10px;
 }
 
 .whatson__link>a {
   display: block;
-  width: 240px;
-  height: 242px;
-  background: url("../images/icon/ico_whatson_arrow.svg") no-repeat center;
-  background-size: contain;
+  width: 200px;
+  height: 180px;
+  background: url("../images/icon/ico_whatson_arrow.svg") no-repeat center / contain;
 }
 
 .whatson__img {
@@ -117,8 +120,7 @@
   overflow: hidden;
   width: 52px;
   height: 186px;
-  background: url("../images/icon/ico_barcode.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_barcode.svg") no-repeat center / contain;
 }
 
 /* QUICK MENU */
@@ -144,7 +146,7 @@
 
 .quick-menu__rental {
   position: relative;
-  width: 25%;
+  width: 22%;
   padding: 35px 38px;
   color: #fff;
   background-color: #000;
@@ -157,14 +159,13 @@
   right: 38px;
   width: 103px;
   height: 81px;
-  background: url("../images/icon/ico_map.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_map.png") no-repeat center / contain;
 }
 
 .quick-menu__guide {
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 78%;
   padding: 35px 38px;
   color: #000;
   background-color: #f8f8f8;
@@ -203,8 +204,7 @@
   bottom: 10px;
   width: 63px;
   height: 75px;
-  background: url("../images/icon/ico_guide1.svg") no-repeat left bottom;
-  background-size: contain;
+  background: url("../images/icon/ico_guide1.svg") no-repeat left bottom / contain;
 }
 
 .guide-menu .menu-item:nth-child(2) a::before {
@@ -231,8 +231,7 @@
   right: 0;
   width: 4px;
   height: 9px;
-  background: url("../images/icon/ico_text_arrow.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_text_arrow.svg") no-repeat center / contain;
   transform: translateY(-50%);
   opacity: 0;
   visibility: hidden;
@@ -281,8 +280,7 @@
   display: inline-block;
   width: 27px;
   height: 24px;
-  background: url("../images/icon/ico_calender.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_calender.svg") no-repeat center / contain;
 }
 
 .event__title .event__more::before {
@@ -415,8 +413,7 @@
   height: 100%;
   padding-top: 64px;
   padding-bottom: 58px;
-  background: url("../images/bg_ticket_open.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../images/bg_ticket_open.jpg") no-repeat center / cover;
 }
 
 .ticket::before {
@@ -572,8 +569,7 @@
 .ticket-swiper .swiper-button-next {
   width: 63px;
   height: 45px;
-  background: url("../images/icon/ico_slide_prev.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_slide_prev.svg") no-repeat center / contain;
 }
 
 .ticket-swiper .swiper-button-prev {
@@ -581,8 +577,7 @@
 }
 
 .ticket-swiper .swiper-button-next {
-  background: url("../images/icon/ico_slide_next.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_slide_next.svg") no-repeat center / contain;
 }
 
 .ticket-swiper .swiper-button-prev::after,
@@ -601,8 +596,7 @@
   bottom: 0;
   width: 192px;
   height: 100%;
-  background: url("../images/bg_barcode.png") no-repeat bottom right;
-  background-size: contain;
+  background: url("../images/bg_barcode.png") no-repeat bottom right / contain;
 }
 
 .ticket-bg-left {
@@ -623,8 +617,7 @@
   left: 0px;
   width: 40px;
   height: 40px;
-  background: url("../images/bg_ticket_left_top.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/bg_ticket_left_top.png") no-repeat center / contain;
 }
 
 .ticket-bg-left::after {
@@ -651,8 +644,7 @@
   right: 0px;
   width: 40px;
   height: 40px;
-  background: url("../images/bg_ticket_right_top.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/bg_ticket_right_top.png") no-repeat center / contain;
 }
 
 .ticket-bg-right::after {
@@ -693,8 +685,7 @@
   height: 14px;
   margin-top: 2px;
   margin-left: 5px;
-  background: url("../images/icon/ico_more_arrow_b.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_more_arrow_b.svg") no-repeat center / contain;
 }
 
 .news .news__link:hover {
@@ -772,8 +763,7 @@
   width: 100%;
   height: 100%;
   padding: 110px 0;
-  background: url("../images/bg_media_wall.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../images/bg_media_wall.jpg") no-repeat center / cover;
 }
 
 .media::before {
@@ -820,8 +810,7 @@
   height: 17px;
   margin-top: 5px;
   margin-left: 6px;
-  background: url("../images/icon/ico_head_blank_w.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_head_blank_w.svg") no-repeat center / contain;
   opacity: 0;
 }
 
@@ -882,8 +871,7 @@
   transform: translate(-50%, -50%);
   width: 62px;
   height: 62px;
-  background: url("../images/icon/ico_video.svg") no-repeat center;
-  background-size: contain;
+  background: url("../images/icon/ico_video.svg") no-repeat center / contain;
 }
 
 .media__thumb .thumb-item:hover img {

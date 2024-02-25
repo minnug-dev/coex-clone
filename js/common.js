@@ -22,6 +22,7 @@ function openSearch() {
     display: 'none'
   });
 }
+
 // HEADER - 검색 버튼 닫기 함수
 function closeSearch() {
   gsap.to(searchBox, .3, {
