@@ -47,9 +47,17 @@ window.addEventListener('scroll', function(){
   if(scrollTop > lastScroll) {
     // down
     headerEl.classList.remove('fixed');
+     gsap.to(searchBox, .2, {
+        opacity: 0,
+        visibility: 'hidden'
+      });
   } else {
     // up
     headerEl.classList.add('fixed');
+    gsap.to(searchBox, .2, {
+      opacity: 1,
+      visibility: 'visible'
+    });
   }
   lastScroll = scrollTop
 })
