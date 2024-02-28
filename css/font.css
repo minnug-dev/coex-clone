@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Pretendard */
 @font-face {
   font-family: 'Pretendard';
   font-style: normal;
@@ -38,4 +39,29 @@
   font-weight: 700;
   src: url('../../fonts/Pretendard-Bold.woff2') format('font-woff2'),
     url('../../fonts/Pretendard-Bold.woff') format('woff'),
+}
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Poppins-Regular.woff2') format('font-woff2'),
+    url('../../fonts/Poppins-Regular.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/Poppins-Medium.woff2') format('font-woff2'),
+    url('../../fonts/Poppins-Medium.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/Poppins-Bold.woff2') format('font-woff2'),
+    url('../../fonts/Poppins-Bold.woff') format('woff'),
 }
