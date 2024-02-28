@@ -70,65 +70,67 @@
           </a>
         </h1>
 
-        <ul class="gnb">
-          <li class="gnb__item">
-            <a href="javascript:void(0)">행사</a>
-          </li>
-          <li class="gnb__item item-guide">
-            <a href="javascript:void(0)">가이드</a>
-            <ul class="sub-menu">
-              <li class="menu-item"><a href="javacript:void(0)">오시는 길</a></li>
-              <li class="menu-item"><a href="javacript:void(0)">주차안내</a></li>
-              <li class="menu-item"><a href="javacript:void(0)">알림마당</a></li>
-              <li class="menu-item"><a href="javacript:void(0)">편의시설</a></li>
-              <li class="menu-item"><a href="javacript:void(0)">문의하기</a></li>
-              <li class="menu-item"><a href="javacript:void(0)">뉴스</a></li>
-            </ul>
-          </li>
-          <li class="gnb__item">
-            <a href="javascript:void(0)">하이라이트</a>
-          </li>
-          <li class="gnb__item item-business">
-            <a href="javascript:void(0)"><span class="main-color">Business</span></a>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="javascript:void(0)">행사</a>
+            </li>
+            <li class="nav__item item-guide">
+              <a href="javascript:void(0)">가이드</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="javacript:void(0)">오시는 길</a></li>
+                <li class="menu-item"><a href="javacript:void(0)">주차안내</a></li>
+                <li class="menu-item"><a href="javacript:void(0)">알림마당</a></li>
+                <li class="menu-item"><a href="javacript:void(0)">편의시설</a></li>
+                <li class="menu-item"><a href="javacript:void(0)">문의하기</a></li>
+                <li class="menu-item"><a href="javacript:void(0)">뉴스</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)">하이라이트</a>
+            </li>
+            <li class="nav__item item-business">
+              <a href="javascript:void(0)"><span class="main-color">Business</span></a>
+            </li>
+          </ul>
+        </nav>
 
-          <div class="search">
-            <div class="search__btn">
-              <button type="button" class="btn-open" aria-label="검색창 열기 버튼">
-                <img src="./images/icon/ico_search.svg" alt="검색" />
-              </button>
-              <button type="button" class="btn-close" aria-label="검색창 닫기 버튼">
-                <img src="./images/icon/ico_search_close.svg" alt="닫기" />
-              </button>
-            </div>
-
-            <div class="search__open">
-              <div class="search__bar">
-                <div class="input-wrap">
-                  <input type="search" class="input-search" />
-                  <button type="submit" class="search-submit"></button>
-                </div>
-              </div>
-
-              <div class="search__recommend">
-                <h4>추천검색어</h4>
-                <ul class="recommend-list">
-                  <li><a href="javascript:void(0)">#코엑스 전시</a></li>
-                  <li><a href="javascript:void(0)">#행사</a></li>
-                  <li><a href="javascript:void(0)">#주차안내</a></li>
-                  <li><a href="javascript:void(0)">#편의시설</a></li>
-                  <li><a href="javascript:void(0)">#오시는 길</a></li>
-                  <li><a href="javascript:void(0)">#컨퍼런스</a></li>
-                </ul>
-              </div>
-            </div>
+        <div class="search">
+          <div class="search__btn">
+            <button type="button" class="btn-open" aria-label="검색창 열기 버튼">
+              <img src="./images/icon/ico_search.svg" alt="검색" />
+            </button>
+            <button type="button" class="btn-close" aria-label="검색창 닫기 버튼">
+              <img src="./images/icon/ico_search_close.svg" alt="닫기" />
+            </button>
           </div>
 
-          <ul class="lang-list">
-            <li class="is-active"><a href="javascript:void(0)">KOR</a></li>
-            <li><a href="javascript:void(0)">ENG</a></li>
-          </ul>
+          <div class="search__open">
+            <div class="search__bar">
+              <div class="input-wrap">
+                <input type="search" class="input-search" />
+                <button type="submit" class="search-submit"></button>
+              </div>
+            </div>
+
+            <div class="search__recommend">
+              <h4>추천검색어</h4>
+              <ul class="recommend-list">
+                <li><a href="javascript:void(0)">#코엑스 전시</a></li>
+                <li><a href="javascript:void(0)">#행사</a></li>
+                <li><a href="javascript:void(0)">#주차안내</a></li>
+                <li><a href="javascript:void(0)">#편의시설</a></li>
+                <li><a href="javascript:void(0)">#오시는 길</a></li>
+                <li><a href="javascript:void(0)">#컨퍼런스</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ul class="lang-list">
+          <li class="is-active"><a href="javascript:void(0)">KOR</a></li>
+          <li><a href="javascript:void(0)">ENG</a></li>
+        </ul>
       </div>
     </header>
 
@@ -187,7 +189,7 @@
     </section>
 
     <!-- QUICK MENU -->
-    <section class="quick-menu inner scroll-spy">
+    <article class="quick-menu inner scroll-spy">
       <a href="javascript:void(0)" class="quick-menu__rental scroll-move to-up delay-0">
         <span class="quick-sub-title">전시장 및 회의실 임대 정보</span>
         <h4 class="quick-title">대관안내</h4>
@@ -207,7 +209,7 @@
           <li class="menu-item scroll-move to-up delay-4"><a href="javascript:void(0)"><span class="item-txt">층별 편의시설</span></a></li>
         </ul>
       </div>
-    </section>
+    </article>
 
     <!-- EVENT -->
     <section class="event scroll-spy">
@@ -222,7 +224,7 @@
           <a href="javascript:void(0)" class="event__more">View All Events</a>
         </div>
         
-        <div class="event__item">
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -231,12 +233,13 @@
               </div>
               <div class="date">2024.02.24 - 2024.02.24</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_ireland_fair.jpg" alt="제 4회 아일랜드 유학박람회" />
-            </div>
+              <figcaption class="visually-hidden">제 4회 아일랜드 유학박람회, 13개 아일랜드대학교와 11개 아일랜드어학원이 한자리에, 2월24일(토) 코엑스 4층, 아일랜드프레스티지유학 주최</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
-        <div class="event__item">
+        </article>
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -245,11 +248,12 @@
               </div>
               <div class="date">2024.02.22 - 2024.02.25</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_k_illust_fair.jpg" alt="K-일러스트레이션페어 서울 2024" />
-            </div>
+              <figcaption class="visually-hidden">K-일러스트레이션페어 2024년 2월 22일(목)부터 25일(금)까지 서울 코엑스 D홀에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
+        </article>
         <div class="event__item border-left-none">
           <a href="javascript:void(0)">
             <div class="item-cont">
@@ -259,12 +263,13 @@
               </div>
               <div class="date">2024.02.22 - 2024.02.25</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_korea_sports.jpg" alt="2024 서울국제스포츠레저산업전(SPOEX2024)" />
-            </div>
+              <figcaption class="visually-hidden">2024 서울국제스포츠레저산업전 2024년 2월 22일부터 25일까지 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
         </div>
-        <div class="event__item">
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -273,12 +278,13 @@
               </div>
               <div class="date">2024.02.28 - 2024.03.03</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_seoul_living_designfair.jpg" alt="제29회 서울리빙디자인페어" />
-            </div>
+              <figcaption class="visually-hidden">제29회 서울리빙디자인페어 2024년 2월 28일 수요일부터 3월 3일 일요일까지 코엑스 홀 A, B, C, D에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
-        <div class="event__item">
+        </article>
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -287,12 +293,13 @@
               </div>
               <div class="date">2024.02.28 - 2024.03.03</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_craft_seoul.jpg" alt="2024 크래프트서울" />
-            </div>
+              <figcaption class="visually-hidden">2024 크래프트서울 2024년 2월 28일 수요일부터 3월 3일 일요일까지 서울 코엑스 2층 더 플라츠에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
-        <div class="event__item">
+        </article>
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -301,11 +308,12 @@
               </div>
               <div class="date">2024.03.06 - 2024.03.08</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_inter_battery.jpg" alt="인터배터리 2024" />
-            </div>
+              <figcaption class="visually-hidden">2024 인터배터리 2024년 3월 6일 수요일부터 3월 8일 금요일까지 코엑스 홀 A,B,C,D, 더 플라츠에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
+        </article>
         <div class="event__item border-left-none">
           <a href="javascript:void(0)">
             <div class="item-cont">
@@ -315,12 +323,13 @@
               </div>
               <div class="date">2024.03.06 - 2024.03.08</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_ev_trend_korea.png" alt="EV 트렌드 코리아 2024" />
-            </div>
+              <figcaption class="visually-hidden">대한민국 대표 EV 산업 전시회 2024년 3월 6일 수요일부터 3월 8일 금요일까지 코엑스 홀 A에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
         </div>
-        <div class="event__item">
+        <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -329,12 +338,13 @@
               </div>
               <div class="date">2024.03.14 - 2024.03.17</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_kimes.jpg" alt="제39회 국제 의료기기 및 병원설비 전시회" />
-            </div>
+              <figcaption class="visually-hidden">제39회 국제 의료기기 및 병원설비 전시회 2024년 3월 14일부터 17일까지 코엑스 전시장 전관</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
-         <div class="event__item">
+        </article>
+         <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -343,12 +353,13 @@
               </div>
               <div class="date">2024.03.21 - 2024.03.23</div>
             </div>
-            <div class="item-img">
+            <figure class="item-img">
               <img src="./images/thumb_ifs.jpg" alt="2024 상반기 IFS 프랜차이즈 창업·산업 박람회" />
-            </div>
+              <figcaption class="visually-hidden"> IFS 프랜차이즈 창업·산업 박람회 2024년 3월 21일 목요일부터 23일 토요일까지 서울 코엑스 3층 C&D 홀에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
-         <div class="event__item">
+        </article>
+         <article class="event__item">
           <a href="javascript:void(0)">
             <div class="item-cont">
               <div class="item-txt">
@@ -357,11 +368,12 @@
               </div>
               <div class="date">2024.03.21 - 2024.03.23</div>
             </div>
-            <div class="item-img">
-              <img src="./images/thumb_fassion_code.png" alt="패션코드 2024 FW" />
-            </div>
+            <figure class="item-img">
+              <img src="./images/thumb_fassion_code.jpg" alt="패션코드 2024 FW" />
+              <figcaption class="visually-hidden">패션코드 2024 FW 2024년 3월 21일 목요일부터 3월 23일 토요일까지 코엑스 더 플라츠에서 진행</figcaption class="visually-hidden">
+            </figure>
           </a>
-        </div>
+        </article>
       </div>
     </section>
 
