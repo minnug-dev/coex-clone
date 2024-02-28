@@ -7,7 +7,7 @@ const familyMenu = document.querySelector('.family-list');
 const headerEl = document.querySelector('.header');
 
 // HEADER - 검색 버튼 열기 함수
-function openSearch() {
+const openSearch = function () {
   searchBox.classList.add('is-open');
   gsap.to(searchBox, .3, {
     opacity: 1,
@@ -24,7 +24,7 @@ function openSearch() {
 }
 
 // HEADER - 검색 버튼 닫기 함수
-function closeSearch() {
+const closeSearch = function () {
   gsap.to(searchBox, .3, {
     opacity: 0,
     display: 'none'
@@ -46,7 +46,7 @@ searchCloseBtn.addEventListener('click', closeSearch);
 
 // HEADER - 위/아래 스크롤 시 show/hide 함수
 let lastScroll = document.documentElement.scrollTop;
-function visibleHeader () {
+const visibleHeader = function () {
   let scrollTop = document.documentElement.scrollTop;
   if(scrollTop > lastScroll) {
     // down
@@ -82,15 +82,15 @@ newsTabBtns.forEach(function(btn, index) {
   });
 });
 
-// FOOTER - 버튼 클릭 시 최상단으로 이동
+// FOOTER - 상단 이동 버튼 
 toTopBtn.addEventListener('click', function(){
   gsap.to(window, .5, {
     scrollTo: 0
   });
 });
 
-// FOOTER - 버튼 클릭 시 최상단으로 이동 함수
-function visibleTopBtn (){
+// FOOTER - 상단 이동 버튼 함수
+const visibleTopBtn = function (){
   if (window.scrollY > 700) {
     gsap.to(toTopBtn, .3, {
       opacity: 1,
@@ -104,10 +104,23 @@ function visibleTopBtn (){
   }
 }
 
-// 함수 호출
+// FOOTER - 상단 이동 버튼 고정
+const footer = document.querySelector('.footer');
+let scrollTrigger = 0;
+const triggerTopBtn = function (){
+  scrollTrigger = footer.getBoundingClientRect().top;
+  if ((window.innerHeight - 50) > scrollTrigger) {
+    toTopBtn.classList.add('is-fixed');
+  } else {
+    toTopBtn.classList.remove('is-fixed');
+  }
+}
+
+// 스크롤 이벤트 관련 함수 호출
 window.addEventListener('scroll', function() {
   visibleHeader();
   visibleTopBtn();
+  triggerTopBtn();
 })
 
 // FOOTER - 패밀리 사이트 열고 닫기

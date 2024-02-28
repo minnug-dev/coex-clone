@@ -381,7 +381,8 @@ a {
 
 /* FOOTER */
 .footer {
-  margin-top: 115px;
+  position: relative;
+  padding-top: 115px;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -673,4 +674,10 @@ a {
   height: 39px;
   border: 2px solid #000;
   background: #fff url("../images/icon/ico_scroll_top.svg") no-repeat center / 14px 15px;
+}
+
+.top-btn.is-fixed {
+  position: absolute;
+  top: 50px;
+  bottom: auto;
 }
