@@ -12,14 +12,14 @@ const swiperWhatson= new Swiper('.whatson__img .swiper', {
     clickable: true 
   },
   on: {
-    init: function () {
+    init: function() {
       whatsonTitle[0].classList.add('is-active');
       whatsonDate[0].style.display = 'block';
       whatsonPlace[0].style.display = 'block';
       whatonLink[0].style.display = 'block';
     },
-    slideChangeTransitionStart:function(){
-      whatsonTitle.forEach(function(element, index){
+    slideChangeTransitionStart:function() {
+      whatsonTitle.forEach(function (element, index) {
         element.classList.remove('is-active');
         document.querySelectorAll('.whatson__txt-info .info-date')[index].style.display = 'none';
         document.querySelectorAll('.whatson__txt-info .info-location')[index].style.display = 'none';

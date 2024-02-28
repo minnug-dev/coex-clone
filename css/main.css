@@ -712,7 +712,7 @@
 }
 
 .news__menu .menu-item:hover a,
-.news__menu .menu-item.is-active a {
+.news__menu .menu-item.is-selected a {
   color: #000;
 }
 
@@ -753,8 +753,12 @@
   text-decoration: underline;
 }
 
-.list-bidding {
+.tab-contents .tab-content {
   display: none;
+}
+
+.tab-contents .tab-content.is-active {
+  display: block;
 }
 
 /* MEDIA */

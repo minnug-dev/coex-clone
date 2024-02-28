@@ -44,7 +44,6 @@ function closeSearch() {
 searchOpenBtn.addEventListener('click', openSearch);
 searchCloseBtn.addEventListener('click', closeSearch);
 
-
 // HEADER - 위/아래 스크롤 시 show/hide 함수
 let lastScroll = document.documentElement.scrollTop;
 function visibleHeader () {
@@ -66,6 +65,22 @@ function visibleHeader () {
   }
   lastScroll = scrollTop
 }
+
+// NEWS - 탭메뉴
+const newsTabBtns = document.querySelectorAll('.tab-menu .tab-menu-item');
+const newsContents = document.querySelectorAll('.tab-contents .tab-content');
+newsTabBtns.forEach(function(btn, index) {
+  btn.addEventListener('click', function() {
+    newsTabBtns.forEach(function(each) {
+      each.classList.remove('is-selected')
+    });
+    btn.classList.add('is-selected');
+    newsContents.forEach(function(content) {
+      content.classList.remove('is-active');
+    });
+    newsContents[index].classList.add('is-active');
+  });
+});
 
 // FOOTER - 버튼 클릭 시 최상단으로 이동
 toTopBtn.addEventListener('click', function(){
