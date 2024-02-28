@@ -40,9 +40,14 @@ function closeSearch() {
   });
 }
 
-// HEADER - 위/아래 스크롤 시 show/hide
+// HEADER - 검색 버튼 열기/닫기 호출
+searchOpenBtn.addEventListener('click', openSearch);
+searchCloseBtn.addEventListener('click', closeSearch);
+
+
+// HEADER - 위/아래 스크롤 시 show/hide 함수
 let lastScroll = document.documentElement.scrollTop;
-window.addEventListener('scroll', function(){
+function visibleHeader () {
   let scrollTop = document.documentElement.scrollTop;
   if(scrollTop > lastScroll) {
     // down
@@ -60,17 +65,7 @@ window.addEventListener('scroll', function(){
     });
   }
   lastScroll = scrollTop
-})
-
-// HEADER - 검색 버튼 열기/닫기 호출
-searchOpenBtn.addEventListener('click', openSearch);
-searchCloseBtn.addEventListener('click', closeSearch);
-
-// FOOTER - 패밀리 사이트 열고 닫기
-familyOpenBtn.addEventListener('click', function(){
-  familyMenu.classList.toggle('is-open');
-  this.classList.toggle('is-active');
-});
+}
 
 // FOOTER - 버튼 클릭 시 최상단으로 이동
 toTopBtn.addEventListener('click', function(){
@@ -78,7 +73,9 @@ toTopBtn.addEventListener('click', function(){
     scrollTo: 0
   });
 });
-window.addEventListener('scroll', _.throttle(function() {
+
+// FOOTER - 버튼 클릭 시 최상단으로 이동 함수
+function visibleTopBtn (){
   if (window.scrollY > 700) {
     gsap.to(toTopBtn, .3, {
       opacity: 1,
@@ -90,7 +87,19 @@ window.addEventListener('scroll', _.throttle(function() {
       display: 'none'
     });
   }
-}, 300));
+}
+
+// 함수 호출
+window.addEventListener('scroll', function() {
+  visibleHeader();
+  visibleTopBtn();
+})
+
+// FOOTER - 패밀리 사이트 열고 닫기
+familyOpenBtn.addEventListener('click', function(){
+  familyMenu.classList.toggle('is-open');
+  this.classList.toggle('is-active');
+});
 
 // FOOTER - 현재 년도 정보 반영
 const thisYear = document.querySelector('.this-year');
