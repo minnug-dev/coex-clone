@@ -9,7 +9,7 @@
 #### ✔ 사이트 주소
 
 - [코엑스 공식 사이트](https://www.coex.co.kr/)
-- [코엑스 클론코딩 사이트](https://minjoo-coex-clone.netlify.app/)
+- [코엑스 클론코딩 사이트](https://minjoo-clonecoding-coex.netlify.app/)
 
 #### ✔ 제작 기간
 
